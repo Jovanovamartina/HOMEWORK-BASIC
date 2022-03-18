@@ -9,7 +9,7 @@ namespace exercise3
         static void Main(string[] args)
         {
 
-            static int CalculateAgeCorrect(DateTime birthDate, DateTime now)
+            static int CalculateAge(DateTime birthDate, DateTime now)
             {
                 int age = now.Year - birthDate.Year;
 
