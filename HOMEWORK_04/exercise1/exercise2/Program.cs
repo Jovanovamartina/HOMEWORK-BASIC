@@ -23,7 +23,7 @@ namespace StudentGroup
                 }
                 else
                 {
-                    Console.WriteLine("No such group.");
+                    Console.WriteLine("Invalid input");
                     break;
                 }
             }
