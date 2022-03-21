@@ -9,7 +9,7 @@ namespace StudentGroup
             string[] studentsG1 = {"martina", "ana", "sofia", "melanija", "sara"};
             string[] studentsG2 = {"damjan", "david", "mihail", "daniel", "martin"};
 
-            Console.WriteLine("Which group of students would you like to get info for?");
+            Console.WriteLine("which group you want to choose?");
             int userInput = int.Parse(Console.ReadLine());
             for (int i=0; i<5; i++)
             {
