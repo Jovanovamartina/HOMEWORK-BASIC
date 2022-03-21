@@ -6,8 +6,8 @@ namespace StudentGroup
     {
         static void Main(string[] args)
         {
-            string[] studentsG1 = {"John Doe", "John Smith", "Bob Bobsky", "Jane Doe", "Jane Smith"};
-            string[] studentsG2 = {"Jovan Kovachev", "Jan Kowalski", "Johann Schmidt", "Jan Schmitzer", "Joan Ferrer"};
+            string[] studentsG1 = {"martina", "ana", "sofia", "melanija", "sara"};
+            string[] studentsG2 = {"damjan", "david", "mihail", "daniel", "martin"};
 
             Console.WriteLine("Which group of students would you like to get info for?");
             int userInput = int.Parse(Console.ReadLine());
