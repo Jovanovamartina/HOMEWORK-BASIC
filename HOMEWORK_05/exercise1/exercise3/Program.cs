@@ -27,13 +27,13 @@ namespace ageCalculator
             int monthNow = int.Parse(DateTime.Now.Month.ToString());
             int yearNow = int.Parse(DateTime.Now.Year.ToString());
  
-            if (dateOfBirth > monthNow)
+            if (monthOfBirth > monthNow)
             {
-                age = yearNow - yearOfBirth;
+                age = yearNow - yearOfBirth-1;
             }
-            else if (monthOfBirth == monthNow && yearOfBirth > dateNow)
+            else if (monthOfBirth == monthNow && dateOfBirth > dateNow)
             {
-                age = yearNow - yearOfBirth;
+                age = yearNow - yearOfBirth-1;
             }
             else if (monthOfBirth < monthNow)
             {
