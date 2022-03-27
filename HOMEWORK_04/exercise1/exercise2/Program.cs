@@ -1,18 +1,33 @@
-﻿using System;
+using System;
 
-namespace exercise2
+namespace StudentGroup
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            string[] G1 = new string[5] { "martina", "sofia", "ana", "melani", "sara" };
-            string[] G2 = new string[5] { "david", "damjan", "marko", "kostadin", "vladimir" };
+            string[] studentsG1 = {"martina", "ana", "sofia", "melanija", "sara"};
+            string[] studentsG2 = {"damjan", "david", "mihail", "daniel", "martin"};
 
-            Console.WriteLine("enter student group between 1 and 2");
+            Console.WriteLine("which group you want to choose?");
+            int userInput = int.Parse(Console.ReadLine());
+            for (int i=0; i<5; i++)
+            {
+                if (userInput == 1)
+                {
+                    Console.WriteLine((i + 1) + ". " + studentsG1[i]);
+                }
+                else if (userInput == 2)
+                {
+                    Console.WriteLine((i + 1) + ". " + studentsG2[i]);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input");
+                    break;
+                }
+            }
             Console.ReadLine();
-            int FirstNumber = 1;
-            int SecondNumber = 2;
         }
     }
 }
